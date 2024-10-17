@@ -9,13 +9,13 @@ export async function fetchVakaData(locationCode) {
       },
       body: JSON.stringify({
         query: [
-          // {
-          //   code: 'Vuosi',
-          //   selection: {
-          //     filter: 'item',
-          //     values: ['2022']
-          //   }
-          // },
+          {
+            code: 'Vuosi',
+            selection: {
+              filter: 'item',
+              values: ['2022']
+            }
+          },
           // {
           //   code: 'Ikä',
           //   selection: {
