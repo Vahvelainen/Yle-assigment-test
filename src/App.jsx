@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import AreaSelection from './searchtool/AreaSelection'
-import ShowResult from './searchtool/Result'
+import AreaSelection from './AreaSelection/AreaSelection'
+import ShowResult from './Result/Result'
 import './App.css'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
   }
 
   function doComparison(percentage) {
-    const mean = 11
+    const mean = 12
     if (percentage > mean ) {
       setComparison('suurempi')
     } else if (percentage < mean) {
@@ -41,7 +41,7 @@ function App() {
       <p>Vieraskielisten osuus varhaiskasvatuksessa paikassa <strong>{areaName}</strong> on <strong>{comparison}</strong> kuin Suomessa keskimäärin</p>
 
       {/* Not fact checked! */}
-      <p>Isoin osuus vieraskielisiä on Vantaalla 32% ja pienin Auralla 1%</p>
+      <p>Isoin osuus vieraskielisiä on Vantaalla 32% ja pienin Kempelee 1%</p>
       <p>Tiedot vuodelta 2022, Tilastokeskus</p>
     </>
   )

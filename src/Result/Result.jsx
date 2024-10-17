@@ -51,10 +51,10 @@ export default function({area, areaName, onResult = ()=>{}}) {
       <h3>{areaName}</h3>
       <CircularProgress progress={ percentage }/>
       <h2>Osuus: {percentage}%</h2>
+      <p>Varhaiskasvatukseen osallistui lapsia:</p>
       <p className="number">{total}</p>
-      <p>Varhaiskasvatukseen osallistuneet lapset</p>
+      <p>joista vieraskielisiä:</p>
       <p className="number">{portion}</p>
-      <p>joista vieraskielisiä</p>
     </div>
   );
 }
